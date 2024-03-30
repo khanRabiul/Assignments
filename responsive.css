@@ -1,0 +1,95 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~
+Mobile (Extra Small Device)
+~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media(max-width: 600px){
+  .site-nav{
+    gap: 3rem;
+  }
+  .site-nav .logo {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+  .site-nav .menu {
+    grid-column: 2/9;
+    display: flex;
+    grid-row: 1;
+    /* align-items: center; */
+    justify-content: space-between;
+  }
+}
+/*
+Additional Breakpoint
+*/
+@media(min-width: 601px){
+  /* Nav Section*/
+  .site-nav .logo {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+  .site-nav .menu {
+    grid-column: 4/9;
+    display: flex;
+    grid-row: 1;
+    /* align-items: center; */
+    justify-content: space-between;
+  }
+  .site-nav menu{
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero .icon{
+    margin-top: 7rem;
+  }
+  #design .same-grid-clmn{
+    grid-column: span 4;
+    align-items: center;
+  }
+  /* About Section */
+  .team-cards{
+    gap:1rem;
+  }
+  .same-grid-clmn{
+    grid-column: span 4;  
+  }
+  .work .image{
+    grid-column: span 2;
+    gap: 1rem;
+    margin-bottom: 1rem;;
+  }
+  .col1-1-2{
+    grid-column: span 4;
+    gap:2%;
+    justify-content: space-between;
+  }
+  
+  .sfirst{
+    grid-column: 1/4;
+  }
+  .special{
+    grid-column: 4/6;
+  }
+  .slast{
+    grid-column: 6/9;
+  }
+  .pricing-card{
+    gap: .5rem;
+  }
+}
+/*~~~~~~~~~~~~~
+Tablets/ Laptop 
+~~~~~~~~~~~~~~*/
+@media(min-width: 960px){
+.site-nav{
+  justify-content: space-between;
+}
+.site-nav .menu{
+  grid-column: 7/-1;
+}
+ #about .same-grid-clmn,
+ #team .same-grid-clmn{
+  grid-column: span 2;
+ }
+ .pricing-card .same{
+  height: 40rem;
+}
+}
